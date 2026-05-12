@@ -314,13 +314,13 @@ https://note.com/inchacomusho/n/n24cdb7a6774c
 
 ■唯一の温暖化対策
 
-Direct Planetary Cooling, Artificial Wisdom, and the New Civilizational Genesis Plan
+Direct Planetary Cooling, Artificial Wisdom, and the New Civilizational Genesis Plan  
 https://github.com/InchaComisho/Direct-Planetary-Cooling-Artificial-Wisdom-and-the-  New-Civilizational-Genesis-Plan
 
 Direct Planetary Cooling – Integrated Repository Index  
 https://github.com/InchaComisho/Direct-Planetary-Cooling-Integrated-Repository-Index
 
-Microbial Collapse, Carbon Fixation Loss, and Planetary Breakdown – Repository Index
+Microbial Collapse, Carbon Fixation Loss, and Planetary Breakdown – Repository Index  
 https://github.com/InchaComisho/Microbial-Collapse-Carbon-Fixation-Loss-and-Planetary-  Breakdown-Repository-Index
 
 Natural Complementary Science and the New Civilizational Genesis Plan – Repository Index  
