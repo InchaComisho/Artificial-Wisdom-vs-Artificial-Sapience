@@ -174,11 +174,11 @@ The visual makes clear that AW has a consistently larger positive profile, not b
 - `figures/combined_risk_comparison.png` — Bar chart comparing 2100 and 2200 survivability, collapse risk, and recovery capacity
 - `figures/framework_radar_comparison.png` — Radar chart of framework parameter profiles
 
-![Civilization Survival Under Combined Stress](../figures/civilization_survival_combined.png)
+![Civilization Survival Under Combined Stress](../figures/civilization_survival_combined_v2.png)
 
-![Combined Risk Comparison](../figures/combined_risk_comparison.png)
+![Combined Risk Comparison](../figures/combined_risk_comparison_v2.png)
 
-![Framework Radar Comparison](../figures/framework_radar_comparison.png)
+![Framework Radar Comparison](../figures/framework_radar_comparison_v2.png)
 
 ---
 

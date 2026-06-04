@@ -150,11 +150,11 @@ The following figures are produced by `simulator/generate_civilization_figures.p
 - `figures/warming_driver_breakdown.png` — Grouped bar chart showing the relative contribution of each warming driver to stress at 2050, 2100, and 2200
 - `figures/warming_survival_heatmap.png` — Heatmap: survivability index by framework and time horizon
 
-![Civilization Survival Under Warming Stress](../figures/civilization_survival_warming.png)
+![Civilization Survival Under Warming Stress](../figures/civilization_survival_warming_v2.png)
 
-![Warming Driver Breakdown](../figures/warming_driver_breakdown.png)
+![Warming Driver Breakdown](../figures/warming_driver_breakdown_v2.png)
 
-![Warming Survival Heatmap](../figures/warming_survival_heatmap.png)
+![Warming Survival Heatmap](../figures/warming_survival_heatmap_v2.png)
 
 ---
 

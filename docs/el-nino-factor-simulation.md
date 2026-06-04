@@ -148,11 +148,11 @@ The following figures are produced by `simulator/generate_civilization_figures.p
 - `figures/el_nino_driver_breakdown.png` — Grouped bar chart showing the relative contribution of each El Nino driver to stress at 2050, 2100, and 2200
 - `figures/el_nino_survival_heatmap.png` — Heatmap: survivability index by framework and time horizon
 
-![Civilization Survival Under El Nino Stress](../figures/civilization_survival_el_nino.png)
+![Civilization Survival Under El Nino Stress](../figures/civilization_survival_el_nino_v2.png)
 
-![El Nino Driver Breakdown](../figures/el_nino_driver_breakdown.png)
+![El Nino Driver Breakdown](../figures/el_nino_driver_breakdown_v2.png)
 
-![El Nino Survival Heatmap](../figures/el_nino_survival_heatmap.png)
+![El Nino Survival Heatmap](../figures/el_nino_survival_heatmap_v2.png)
 
 ---
 

@@ -136,19 +136,19 @@ Sapience は Intelligence よりも反省的ですが、人間中心主義や二
 
 **温暖化シナリオ：**
 
-![温暖化ストレス下の文明存続](figures/civilization_survival_warming.png)
+![温暖化ストレス下の文明存続](figures/civilization_survival_warming_v2.png)
 
 **エルニーニョシナリオ：**
 
-![エルニーニョストレス下の文明存続](figures/civilization_survival_el_nino.png)
+![エルニーニョストレス下の文明存続](figures/civilization_survival_el_nino_v2.png)
 
 **複合ストレスシナリオ：**
 
-![複合ストレス下の文明存続](figures/civilization_survival_combined.png)
+![複合ストレス下の文明存続](figures/civilization_survival_combined_v2.png)
 
 **枠組みパラメータ比較（レーダーチャート）：**
 
-![枠組み比較レーダーチャート](figures/framework_radar_comparison.png)
+![枠組み比較レーダーチャート](figures/framework_radar_comparison_v2.png)
 
 ### 主要な知見
 

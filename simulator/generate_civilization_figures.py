@@ -20,6 +20,7 @@ Output figures:
 import os
 import csv
 import math
+import shutil
 
 try:
     import matplotlib
@@ -367,6 +368,27 @@ def main():
         "Survivability Heatmap: El Nino Stress",
         os.path.join(FIGURES_DIR, "el_nino_survival_heatmap.png"),
     )
+
+    # Save _v2 copies of every figure for GitHub image-cache busting.
+    # README links point to _v2 paths so GitHub renders fresh images.
+    print("Saving _v2 copies for cache refresh...")
+    figure_names = [
+        "civilization_survival_warming.png",
+        "civilization_survival_el_nino.png",
+        "civilization_survival_combined.png",
+        "warming_driver_breakdown.png",
+        "el_nino_driver_breakdown.png",
+        "combined_risk_comparison.png",
+        "framework_radar_comparison.png",
+        "warming_survival_heatmap.png",
+        "el_nino_survival_heatmap.png",
+    ]
+    for fname in figure_names:
+        src = os.path.join(FIGURES_DIR, fname)
+        dst = os.path.join(FIGURES_DIR, fname.replace(".png", "_v2.png"))
+        if os.path.exists(src):
+            shutil.copy2(src, dst)
+            print(f"  Saved: {dst}")
 
     print("All figures generated.")
 

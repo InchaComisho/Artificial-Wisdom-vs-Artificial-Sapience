@@ -281,23 +281,23 @@ The simulation models three overlapping stress scenarios:
 
 **Warming-Only Scenario:**
 
-![Civilization Survival: Warming Stress](figures/civilization_survival_warming.png)
+![Civilization Survival: Warming Stress](figures/civilization_survival_warming_v2.png)
 
 **El Nino Scenario:**
 
-![Civilization Survival: El Nino Stress](figures/civilization_survival_el_nino.png)
+![Civilization Survival: El Nino Stress](figures/civilization_survival_el_nino_v2.png)
 
 **Combined Stress Scenario:**
 
-![Civilization Survival: Combined Stress](figures/civilization_survival_combined.png)
+![Civilization Survival: Combined Stress](figures/civilization_survival_combined_v2.png)
 
 **Framework Parameter Comparison (Radar):**
 
-![Framework Radar Comparison](figures/framework_radar_comparison.png)
+![Framework Radar Comparison](figures/framework_radar_comparison_v2.png)
 
 **Survivability Heatmap (Warming):**
 
-![Warming Survival Heatmap](figures/warming_survival_heatmap.png)
+![Warming Survival Heatmap](figures/warming_survival_heatmap_v2.png)
 
 ### Key Findings
 
