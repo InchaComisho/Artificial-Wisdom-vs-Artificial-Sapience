@@ -1,0 +1,10 @@
+framework,year,event_frequency,event_intensity,agricultural_shock,marine_productivity_shock,wildfire_amplification,infrastructure_stress,social_instability
+intelligence,2050,0.2,0.18,0.22,0.15,0.1,0.1,0.05
+intelligence,2100,0.18,0.18,0.23,0.15,0.11,0.1,0.05
+intelligence,2200,0.17,0.18,0.24,0.15,0.11,0.1,0.05
+sapience,2050,0.2,0.17,0.19,0.14,0.11,0.11,0.08
+sapience,2100,0.19,0.17,0.19,0.14,0.12,0.11,0.08
+sapience,2200,0.18,0.17,0.2,0.14,0.12,0.11,0.08
+artificial_wisdom,2050,0.19,0.16,0.16,0.13,0.13,0.12,0.11
+artificial_wisdom,2100,0.18,0.16,0.17,0.13,0.13,0.12,0.11
+artificial_wisdom,2200,0.17,0.16,0.17,0.14,0.14,0.12,0.1

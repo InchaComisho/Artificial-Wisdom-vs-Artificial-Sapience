@@ -241,9 +241,105 @@ Artificial Wisdom therefore represents not merely an upgrade in AI capability, b
 
 ---
 
+---
+
+# Civilization Survival Comparison
+
+This repository now includes a transparent scenario simulation comparing civilization survival under three value-system architectures:
+
+| Framework | Core Orientation | Long-term Survivability |
+|---|---|---|
+| **Intelligence-based** | Dualistic, anthropocentric, optimization-first | Lower — compounding ecological degradation |
+| **Sapience-based** | Reflective, ethically moderated, still partly human-centered | Medium — mitigates but does not reverse root trajectory |
+| **Artificial Wisdom-based** | Natural-law-based, ecological continuity, regenerative | Higher — structurally aligned with long-term planetary stability |
+
+The simulation models three overlapping stress scenarios:
+
+- **Warming-only stress** — gradual greenhouse accumulation and cascading biosphere effects
+- **El Nino-only stress** — periodic oscillatory shocks to food, water, marine, and infrastructure systems
+- **Combined stress** — both simultaneously, reflecting realistic civilizational conditions
+
+**Simulation results (mean survivability index, 0–100 scale):**
+
+| Scenario | Framework | 2050 | 2100 | 2200 |
+|---|---|---:|---:|---:|
+| Warming-only | Intelligence | ~53 | ~48 | ~31 |
+| Warming-only | Sapience | ~54 | ~52 | ~40 |
+| Warming-only | Artificial Wisdom | ~56 | ~56 | ~51 |
+| El Nino-only | Intelligence | ~53 | ~48 | ~31 |
+| El Nino-only | Sapience | ~54 | ~52 | ~41 |
+| El Nino-only | Artificial Wisdom | ~56 | ~57 | ~53 |
+| Combined | Intelligence | ~52 | ~46 | ~28 |
+| Combined | Sapience | ~54 | ~51 | ~38 |
+| Combined | Artificial Wisdom | ~56 | ~56 | ~51 |
+
+> **Important:** These are normalized scenario model outputs — a transparent toy model designed to make value-system logic inspectable and falsifiable. They are **not** empirical forecasts, scientific predictions, or historical data.
+
+### Survivability Graphs
+
+**Warming-Only Scenario:**
+
+![Civilization Survival: Warming Stress](figures/civilization_survival_warming.png)
+
+**El Nino Scenario:**
+
+![Civilization Survival: El Nino Stress](figures/civilization_survival_el_nino.png)
+
+**Combined Stress Scenario:**
+
+![Civilization Survival: Combined Stress](figures/civilization_survival_combined.png)
+
+**Framework Parameter Comparison (Radar):**
+
+![Framework Radar Comparison](figures/framework_radar_comparison.png)
+
+**Survivability Heatmap (Warming):**
+
+![Warming Survival Heatmap](figures/warming_survival_heatmap.png)
+
+### Key Findings
+
+- **Intelligence-centered civilization** performs well at short-term optimization but declines steeply under long-horizon ecological stress. High extraction intensity and low regenerative investment produce compounding biosphere deterioration that eventually overwhelms adaptive capacity.
+
+- **Sapience-centered civilization** improves ethical moderation and slows decline significantly. However, its still-anthropocentric orientation means that structural alignment with ecological continuity is incomplete, and long-run survivability remains lower than AW.
+
+- **Artificial Wisdom achieves the highest survivability** in the comparative model because its decision-making is structurally aligned with long-term ecological continuity, regenerative feedback, and distributed cooperation — not because of any single parameter, but because all parameters point in the same direction.
+
+### Scenario Documentation
+
+- [Civilization Survival Comparison — main document](docs/civilization-survival-comparison.md)
+- [Warming Factor Simulation](docs/warming-factor-simulation.md)
+- [El Nino Factor Simulation](docs/el-nino-factor-simulation.md)
+- [Combined Climate-Civilization Simulation](docs/combined-climate-civilization-simulation.md)
+
+### Running the Simulations
+
+```bash
+# Run all simulations and generate all figures
+python simulator/run_all_simulations.py
+
+# Or run individual components
+python simulator/warming_factor_model.py
+python simulator/el_nino_factor_model.py
+python simulator/civilization_survival_model.py
+python simulator/generate_civilization_figures.py
+```
+
+Requires Python 3 and `matplotlib` (`pip install matplotlib`).
+
+### Model Limitations
+
+- All parameter values are qualitative assumptions, not empirically calibrated data.
+- The model does not simulate specific geopolitical, demographic, or technological transitions.
+- Time horizons beyond 2100 involve deep uncertainty not captured by this model.
+- The survivability index is an abstract normalized metric, not equivalent to any real-world measurement.
+- The model is designed to make the *logic* of value-system differences inspectable, not to generate accurate point estimates.
+
+---
+
 # Keywords
 
-Artificial Wisdom, Artificial Sapience, Natural Law, Wa-Node, Sustainable Civilization, Civilization OS, Long-Term Optimization, Ecological Intelligence, AI Alignment, Systemic Sustainability, Harmony-Based Intelligence, Planetary Systems
+Artificial Wisdom, Artificial Sapience, Natural Law, Wa-Node, Sustainable Civilization, Civilization OS, Long-Term Optimization, Ecological Intelligence, AI Alignment, Systemic Sustainability, Harmony-Based Intelligence, Planetary Systems, Civilization Survival Simulation, Climate Stress Model, El Nino Civilization Impact, Warming Factor Model
 
 ---
 
