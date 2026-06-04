@@ -56,6 +56,26 @@ Monte Carlo runs (n=200 per scenario) produce uncertainty bands across all three
 
 ---
 
+## Intelligence Amplification and Collapse Risk: Combined Stress
+
+> *Under the assumptions of this model, combined warming and El Nino stress reveals the collapse-accelerating nature of intelligence without wisdom most clearly — because the compounding of multiple simultaneous stressors is precisely where capability without wisdom is most dangerous.*
+
+When warming and El Nino stress compound simultaneously:
+
+- Intelligence-based civilization's high overshoot (capability_amplification = 1.8 × extraction_bias = 0.95 × short_termism factor = 1.90) means the civilization is simultaneously degrading the biosphere that absorbs El Nino shocks while accumulating warming stress — a dual deterioration that no single mitigation can address
+- Ego amplification (1.70) means that under combined stress, social fragmentation accelerates: resource price shocks + governance failure + migration pressure + short-term optimization create cascading political instability
+- The collapse threshold feedback loops (biosphere < 45, social_cohesion < 38, survivability < 30) activate earlier and more completely under combined stress
+- By around 2070–2080 in most model runs, the Intelligence-based survivability index enters the governance failure zone (below 30) and begins the lock-in decline
+
+Sapience delays these thresholds by approximately 30–50 years, but does not prevent them. The model illustrates that Sapience without natural law alignment is a trajectory modifier, not a trajectory change.
+
+Artificial Wisdom avoids these thresholds entirely in most model runs because:
+- High biosphere integrity (sustained by regenerative investment) buffers both warming and shock impacts
+- Natural law alignment (0.90) means biosphere health directly reinforces survivability rather than being a separate variable
+- High cooperation (0.85) and resilience_orientation (0.90) maintain social cohesion and adaptive capacity even under stress
+
+---
+
 ## Framework Behavior Under Combined Stress
 
 ### Intelligence-Based Civilization
@@ -97,9 +117,11 @@ The AW framework's structural features compound positively under combined stress
 
 | Framework | 2050 Survivability | 2100 Survivability | 2200 Survivability | Collapse risk proxy | Recovery capacity |
 |---|---:|---:|---:|---:|---:|
-| Intelligence | ~60 | ~37 | ~18 | High (>0.65) | Low (0.25) |
-| Sapience | ~66 | ~51 | ~37 | Medium (0.40) | Medium (0.50) |
-| Artificial Wisdom | ~72 | ~65 | ~57 | Low (0.15) | High (0.78) |
+| Intelligence | ~42 | ~13 | ~1 | Very high (>0.85) | Very low (0.10) |
+| Sapience | ~48 | ~28 | ~4 | High (0.65) | Low (0.30) |
+| Artificial Wisdom | ~70 | ~67 | ~60 | Low (0.12) | High (0.82) |
+
+*Under the assumptions of this model (collapse_hypothesis mode). These are scenario outputs under explicit philosophical assumptions — not predictions.*
 
 *All values are normalized (0–100 scale for survivability; 0–1 for risk and recovery proxies). These are scenario model outputs, not predictions.*
 

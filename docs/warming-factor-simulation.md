@@ -87,15 +87,36 @@ The Intelligence framework's high extraction and low regeneration result in a fa
 
 ---
 
+## Intelligence Amplification and Collapse Risk
+
+> *Under the assumptions of this model, if intelligence amplifies extraction and short-termism, warming stress accelerates nonlinearly — not linearly.*
+
+The warming-only scenario encodes this through the `capability_amplification` and `overshoot` mechanism:
+
+- An Intelligence-based civilization extracts resources at high efficiency (extraction_bias = 0.95, capability_amplification = 1.8), producing an overshoot factor roughly 14× higher than AW
+- Ego amplification (ego_amplification = 1.7) delays effective mitigation by slowing recognition of warming signals
+- Because ecological feedback awareness is low (0.15 vs AW's 0.92), biosphere deterioration is not detected and responded to until it has already crossed damage thresholds
+- The result: warming stress rises faster, biosphere integrity falls faster, and the cascade accelerates
+
+Sapience reduces extraction bias (0.80 vs Intelligence's 0.95) and improves mitigation somewhat. But ego_amplification remains high (1.50) and natural law alignment is near-zero (0.05), so Sapience delays the same trajectory rather than reversing it.
+
+Artificial Wisdom's `natural_law_alignment = 0.90` means that biosphere integrity directly reinforces civilization survivability. As AW invests in regeneration and ecological feedback, the system gradually improves its own foundations rather than depleting them.
+
+The model illustrates: *the philosophical architecture of the value system determines whether the civilization is building or destroying its own foundation.*
+
+---
+
 ## Key Results Summary (Warming-Only Scenario)
 
 These values represent the mean survivability index from Monte Carlo simulation runs. See the CSV outputs in `simulator/results/` for full distributions and percentile bands.
 
 | Framework | 2050 Survivability | 2100 Survivability | 2200 Survivability | Primary pattern |
 |---|---:|---:|---:|---|
-| Intelligence | ~62 | ~41 | ~22 | Steady decline accelerating after 2080 |
-| Sapience | ~68 | ~54 | ~40 | Slower decline; partial mitigation delays collapse |
-| Artificial Wisdom | ~74 | ~68 | ~61 | Gradual decline with partial stabilization |
+| Intelligence | ~47 | ~22 | ~1 | Accelerating decline; near-collapse by 2100 |
+| Sapience | ~51 | ~37 | ~7 | Slower decline; severe risk zone by 2150 |
+| Artificial Wisdom | ~70 | ~73 | ~71 | Gradual decline that stabilizes above critical threshold |
+
+*Under the assumptions of this model (collapse_hypothesis mode). Not a prediction.*
 
 *All values are normalized (0–100 scale). These are scenario model outputs, not predictions.*
 

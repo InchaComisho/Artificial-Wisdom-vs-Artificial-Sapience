@@ -105,10 +105,10 @@ def fig_survival_timeseries(data, title, out_path, scenario_label):
     ax.set_title(f"{title}\n[Scenario model — not a prediction]", fontsize=13)
     ax.legend(fontsize=11)
     ax.grid(True, alpha=0.3)
-    ax.axhline(25, color="gray", linestyle="--", linewidth=0.8, alpha=0.6,
-               label="Critical threshold (illustrative)")
-    # Shaded annotation
-    ax.text(2195, 26, "Critical threshold", fontsize=8, color="gray", ha="right")
+    ax.axhline(25, color="gray", linestyle="--", linewidth=0.9, alpha=0.65)
+    ax.axhline(15, color="#8B0000", linestyle=":", linewidth=0.9, alpha=0.55)
+    ax.text(2196, 26, "Severe risk threshold", fontsize=7.5, color="gray", ha="right")
+    ax.text(2196, 16, "Collapse lock-in threshold", fontsize=7.5, color="#8B0000", ha="right")
     fig.tight_layout()
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     fig.savefig(out_path, dpi=150)
@@ -211,10 +211,13 @@ def fig_radar_comparison(out_path):
         "Regenerative\ncapacity",
         "Low extraction\n(inverted)",
     ]
+    # Values reflect collapse_hypothesis framework parameters:
+    # long-term planning (~1-short_termism), ecological alignment (ecol_feedback_awareness),
+    # resilience, cooperation, regenerative capacity (regen_investment), low extraction (1-extraction_bias)
     values = {
-        "intelligence": [0.20, 0.20, 0.25, 0.35, 0.10, 1.0 - 0.80],
-        "sapience":     [0.50, 0.50, 0.50, 0.60, 0.35, 1.0 - 0.55],
-        "artificial_wisdom": [0.90, 0.90, 0.85, 0.85, 0.80, 1.0 - 0.20],
+        "intelligence": [0.10, 0.15, 0.20, 0.30, 0.10, 1.0 - 0.95],
+        "sapience":     [0.28, 0.30, 0.38, 0.42, 0.18, 1.0 - 0.80],
+        "artificial_wisdom": [0.85, 0.92, 0.90, 0.85, 0.92, 1.0 - 0.20],
     }
 
     N = len(categories)

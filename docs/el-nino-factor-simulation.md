@@ -91,13 +91,34 @@ The model applies El Nino stress as a periodic impulse function superimposed on 
 
 ---
 
+## Intelligence Amplification and Collapse Risk Under Oscillatory Stress
+
+> *Under the assumptions of this model, intelligence-based civilization is structurally brittle under repeated El Nino shocks — not merely unlucky.*
+
+The brittleness is structural:
+
+- Intelligence-based civilization optimizes for stable average conditions, creating systems (monocultures, globalized supply chains, centralized infrastructure) that are highly efficient under normal conditions and highly fragile under oscillatory stress
+- Ego amplification (ego_amplification = 1.7) means each shock is accompanied by social fragmentation, blame dynamics, and political instability that reduces the cooperative capacity needed for recovery
+- Low resilience_orientation (0.20) means the civilization was not structurally prepared for shock events, so each event is treated as an emergency rather than an expected feature of the planetary system
+- Low ecological feedback awareness (0.15) means the early warning signals from declining marine productivity, wildfire risk, and watershed deterioration are not acted upon until crisis point
+
+Sapience improves these dimensions modestly. But with ego_amplification still 1.50 and resilience_orientation only 0.38, Sapience civilizations still experience deep social fragmentation during major events.
+
+Artificial Wisdom designs for oscillatory shock as a structural feature: distributed food systems, healthy watershed buffers, restored coastal ecosystems, and high community cooperation (0.85) mean that each shock is absorbed at lower cost and recovery happens more effectively between events.
+
+The model illustrates that intelligence and sapience see El Nino events as *disruptions to normal operation*. Artificial Wisdom treats them as *expected features of a living planetary system* that civilization must be built to coexist with.
+
+---
+
 ## Key Results Summary (El Nino-Only Scenario)
 
 | Framework | 2050 Survivability | 2100 Survivability | 2200 Survivability | Primary pattern |
 |---|---:|---:|---:|---|
-| Intelligence | ~65 | ~48 | ~28 | Episodic sharp drops after major events; slow recovery |
-| Sapience | ~70 | ~57 | ~43 | Shallower drops; moderate recovery between events |
-| Artificial Wisdom | ~75 | ~69 | ~60 | Resilient baseline; oscillatory dips that recover |
+| Intelligence | ~44 | ~17 | ~0 | Sharp episodic drops; near-collapse by 2100 |
+| Sapience | ~50 | ~35 | ~7 | Moderate drops; severe risk zone by 2150 |
+| Artificial Wisdom | ~70 | ~74 | ~72 | Oscillatory dips that recover; sustained above critical threshold |
+
+*Under the assumptions of this model (collapse_hypothesis mode). Not a prediction.*
 
 *All values are normalized (0–100 scale). These are scenario model outputs, not predictions.*
 

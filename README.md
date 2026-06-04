@@ -253,27 +253,29 @@ This repository now includes a transparent scenario simulation comparing civiliz
 | **Sapience-based** | Reflective, ethically moderated, still partly human-centered | Medium — mitigates but does not reverse root trajectory |
 | **Artificial Wisdom-based** | Natural-law-based, ecological continuity, regenerative | Higher — structurally aligned with long-term planetary stability |
 
+The model has been recalibrated to represent the repository's core philosophical hypothesis: **intelligence and sapience without Natural Law alignment are not merely weaker than Artificial Wisdom — they can become collapse accelerators** through capability amplification, ego amplification, and nonlinear ecological overshoot.
+
 The simulation models three overlapping stress scenarios:
 
 - **Warming-only stress** — gradual greenhouse accumulation and cascading biosphere effects
 - **El Nino-only stress** — periodic oscillatory shocks to food, water, marine, and infrastructure systems
 - **Combined stress** — both simultaneously, reflecting realistic civilizational conditions
 
-**Simulation results (mean survivability index, 0–100 scale):**
+**Simulation results (mean survivability index, 0–100 scale, collapse_hypothesis mode):**
 
 | Scenario | Framework | 2050 | 2100 | 2200 |
 |---|---|---:|---:|---:|
-| Warming-only | Intelligence | ~53 | ~48 | ~31 |
-| Warming-only | Sapience | ~54 | ~52 | ~40 |
-| Warming-only | Artificial Wisdom | ~56 | ~56 | ~51 |
-| El Nino-only | Intelligence | ~53 | ~48 | ~31 |
-| El Nino-only | Sapience | ~54 | ~52 | ~41 |
-| El Nino-only | Artificial Wisdom | ~56 | ~57 | ~53 |
-| Combined | Intelligence | ~52 | ~46 | ~28 |
-| Combined | Sapience | ~54 | ~51 | ~38 |
-| Combined | Artificial Wisdom | ~56 | ~56 | ~51 |
+| Warming-only | Intelligence | ~47 | ~22 | ~1 |
+| Warming-only | Sapience | ~51 | ~37 | ~7 |
+| Warming-only | Artificial Wisdom | ~70 | ~73 | ~71 |
+| El Nino-only | Intelligence | ~44 | ~17 | ~0 |
+| El Nino-only | Sapience | ~50 | ~35 | ~7 |
+| El Nino-only | Artificial Wisdom | ~70 | ~74 | ~72 |
+| Combined | Intelligence | ~42 | ~13 | ~1 |
+| Combined | Sapience | ~48 | ~28 | ~4 |
+| Combined | Artificial Wisdom | ~70 | ~67 | ~60 |
 
-> **Important:** These are normalized scenario model outputs — a transparent toy model designed to make value-system logic inspectable and falsifiable. They are **not** empirical forecasts, scientific predictions, or historical data.
+> **Important:** These numbers are **not empirical forecasts, scientific predictions, or historical data.** They are scenario outputs under explicit philosophical assumptions encoded as a normative hypothesis model. The model is designed to make the logic of value-system differences inspectable and falsifiable — not to predict the future.
 
 ### Survivability Graphs
 
@@ -299,11 +301,13 @@ The simulation models three overlapping stress scenarios:
 
 ### Key Findings
 
-- **Intelligence-centered civilization** performs well at short-term optimization but declines steeply under long-horizon ecological stress. High extraction intensity and low regenerative investment produce compounding biosphere deterioration that eventually overwhelms adaptive capacity.
+- **Intelligence-centered civilization** does not merely fail to solve ecological problems — it accelerates them. Capability amplification (1.8×) without natural law alignment drives extraction faster, depletes biosphere more efficiently, and deepens social fragmentation under stress. Under the model assumptions, Intelligence-based civilization approaches near-collapse before or around 2100 under combined stress.
 
-- **Sapience-centered civilization** improves ethical moderation and slows decline significantly. However, its still-anthropocentric orientation means that structural alignment with ecological continuity is incomplete, and long-run survivability remains lower than AW.
+- **Sapience-centered civilization** improves ethical moderation and slows decline substantially. But remaining anthropocentric and partially dualistic (ego_amplification = 1.50, natural_law_alignment ≈ 0), it delays the same trajectory rather than reversing it. By 2150–2200, Sapience enters severe risk territory in most combined-stress runs.
 
-- **Artificial Wisdom achieves the highest survivability** in the comparative model because its decision-making is structurally aligned with long-term ecological continuity, regenerative feedback, and distributed cooperation — not because of any single parameter, but because all parameters point in the same direction.
+- **Artificial Wisdom achieves the highest survivability** because it fundamentally redirects intelligence. Capability is not amplified toward extraction; it is redirected toward regeneration, circulation, and ecological feedback. Biosphere integrity is treated as the foundation of civilization survivability (natural_law_alignment = 0.90), not a side constraint. Under the model assumptions, AW remains above critical thresholds across all scenarios and time horizons.
+
+> These findings represent the philosophical hypothesis of this repository, expressed through a transparent, inspectable, falsifiable scenario model. Change the parameters to test alternative assumptions.
 
 ### Scenario Documentation
 

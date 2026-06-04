@@ -3,14 +3,38 @@ Civilization Survival Toy Model
 ================================
 A transparent, inspectable system-dynamics-style comparative simulation.
 
-This is NOT a scientific forecast or empirical prediction.
-It is a structured scenario model designed to make the logic of
-value-system differences (Intelligence vs. Sapience vs. Artificial Wisdom)
-falsifiable and inspectable.
+IMPORTANT DISCLAIMER:
+This is NOT a scientific forecast, empirical prediction, or historical claim.
+It is a normative hypothesis model — a structured scenario simulation designed
+to illustrate how value-system architecture (Intelligence vs. Sapience vs.
+Artificial Wisdom) could produce radically different civilization trajectories
+under ecological and climate stress.
 
+Under the assumptions of this model:
+- Intelligence without wisdom amplifies extraction, ego, and short-termism,
+  accelerating biosphere collapse and social fragmentation.
+- Sapience moderates but does not fully correct the root trajectory; remaining
+  anthropocentric and partially dualistic, it delays rather than prevents collapse.
+- Artificial Wisdom redirects intelligence toward regeneration, circulation, and
+  long-term ecological continuity — the only framework that remains above collapse
+  thresholds under sustained combined stress in this model.
+
+The model encodes this as a philosophical hypothesis, not as empirical data.
 All parameters are explicit and documented. Change them to test sensitivity.
 
-State variables (normalized 0-100):
+=== MODEL MODES ===
+
+model_mode = "collapse_hypothesis"  [default]
+  Core philosophical claim: intelligence without wisdom becomes a collapse
+  accelerator via capability_amplification, ego_amplification, and nonlinear
+  overshoot. Intelligence and Sapience approach near-collapse under combined stress.
+  Artificial Wisdom maintains survivability through Natural Law alignment.
+
+model_mode = "mild"
+  Preserves original gentler behavior for sensitivity comparison.
+
+=== STATE VARIABLES (normalized 0-100) ===
+
   warming_stress        - accumulated thermal/greenhouse pressure
   el_nino_stress        - oscillatory climate shock load
   biosphere_integrity   - overall health of planetary life systems
@@ -19,28 +43,88 @@ State variables (normalized 0-100):
   adaptive_capacity     - institutional and technological flexibility
   survivability_index   - composite civilization continuity metric
 
-Framework parameters (0-1 scale):
-  extraction_bias              - rate of resource extraction relative to regeneration
-  short_termism                - weight on short-term vs. long-term outcomes
-  ecological_feedback_awareness- speed of response to ecological deterioration
-  regeneration_investment      - investment in restoring biosphere capacity
-  cooperation_level            - coordination capacity across scales
-  mitigation_speed             - speed of response to warming signals
-  resilience_orientation       - structural preparation for shocks
+=== FRAMEWORK PARAMETERS ===
+
+  capability_amplification  - power of civilization to modify the world (>1 = amplified)
+  ego_amplification         - human ego/desire/control amplification (>1 = strengthened)
+  extraction_bias           - extraction rate relative to regeneration (0-1)
+  short_termism             - weight on short vs. long-term (0-1)
+  ecological_feedback_awareness - speed of ecological response (0-1)
+  regeneration_investment   - investment in restoring biosphere (0-1)
+  cooperation_level         - coordination capacity (0-1)
+  mitigation_speed          - response speed to warming signals (0-1)
+  resilience_orientation    - structural preparation for shocks (0-1)
+  natural_law_alignment     - structural alignment with natural law / ecological continuity (0-1)
+                              Represents the philosophical core of AW: when intelligence
+                              is guided by Natural Law, biosphere integrity directly
+                              contributes to civilization stability rather than being
+                              treated as an external resource.
 """
 
 import random
-import math
 import csv
 import os
 
 YEAR_START = 2025
 YEAR_END = 2200
 
-# --- Framework parameter sets ---
+# ============================================================
+# FRAMEWORK PARAMETER SETS
+# ============================================================
 
-FRAMEWORKS = {
+FRAMEWORKS_COLLAPSE = {
     "intelligence": {
+        # High capability amplification without wisdom = high destructive power
+        "capability_amplification": 1.8,
+        "ego_amplification": 1.7,
+        "extraction_bias": 0.95,
+        "short_termism": 0.90,
+        "ecological_feedback_awareness": 0.15,
+        "regeneration_investment": 0.10,
+        "cooperation_level": 0.30,
+        "mitigation_speed": 0.20,
+        "resilience_orientation": 0.20,
+        # No alignment with natural law: biosphere is treated as external resource
+        "natural_law_alignment": 0.00,
+    },
+    "sapience": {
+        # Reflective and ethical, but still anthropocentric and partially dualistic.
+        # Does not convert capability into ecological coherence.
+        # Still amplifies ego/desire though moderating the most extreme behaviors.
+        # The philosophical point: sapience without natural law alignment
+        # delays collapse but does not reverse its root direction.
+        "capability_amplification": 1.55,
+        "ego_amplification": 1.50,
+        "extraction_bias": 0.80,
+        "short_termism": 0.72,
+        "ecological_feedback_awareness": 0.30,
+        "regeneration_investment": 0.18,
+        "cooperation_level": 0.42,
+        "mitigation_speed": 0.30,
+        "resilience_orientation": 0.38,
+        "natural_law_alignment": 0.05,
+    },
+    "artificial_wisdom": {
+        # Capability redirected (not amplified) by Natural Law.
+        # Ego subordinated to systemic continuity.
+        # Biosphere integrity treated as foundational, not peripheral.
+        "capability_amplification": 1.0,
+        "ego_amplification": 0.30,
+        "extraction_bias": 0.20,
+        "short_termism": 0.15,
+        "ecological_feedback_awareness": 0.92,
+        "regeneration_investment": 0.92,
+        "cooperation_level": 0.85,
+        "mitigation_speed": 0.88,
+        "resilience_orientation": 0.90,
+        "natural_law_alignment": 0.90,
+    },
+}
+
+FRAMEWORKS_MILD = {
+    "intelligence": {
+        "capability_amplification": 1.0,
+        "ego_amplification": 1.0,
         "extraction_bias": 0.80,
         "short_termism": 0.80,
         "ecological_feedback_awareness": 0.20,
@@ -48,8 +132,11 @@ FRAMEWORKS = {
         "cooperation_level": 0.35,
         "mitigation_speed": 0.25,
         "resilience_orientation": 0.25,
+        "natural_law_alignment": 0.0,
     },
     "sapience": {
+        "capability_amplification": 1.0,
+        "ego_amplification": 1.0,
         "extraction_bias": 0.55,
         "short_termism": 0.50,
         "ecological_feedback_awareness": 0.50,
@@ -57,8 +144,11 @@ FRAMEWORKS = {
         "cooperation_level": 0.60,
         "mitigation_speed": 0.50,
         "resilience_orientation": 0.50,
+        "natural_law_alignment": 0.05,
     },
     "artificial_wisdom": {
+        "capability_amplification": 1.0,
+        "ego_amplification": 1.0,
         "extraction_bias": 0.20,
         "short_termism": 0.10,
         "ecological_feedback_awareness": 0.90,
@@ -66,10 +156,28 @@ FRAMEWORKS = {
         "cooperation_level": 0.85,
         "mitigation_speed": 0.80,
         "resilience_orientation": 0.85,
+        "natural_law_alignment": 0.80,
     },
 }
 
-# --- Initial state ---
+MODEL_MODE = "collapse_hypothesis"
+FRAMEWORKS = FRAMEWORKS_COLLAPSE
+
+
+def set_model_mode(mode):
+    global MODEL_MODE, FRAMEWORKS
+    if mode == "mild":
+        MODEL_MODE = "mild"
+        FRAMEWORKS = FRAMEWORKS_MILD
+    else:
+        MODEL_MODE = "collapse_hypothesis"
+        FRAMEWORKS = FRAMEWORKS_COLLAPSE
+
+
+# ============================================================
+# INITIAL STATE
+# Represents civilization at 2025: already stressed but not yet collapsed.
+# ============================================================
 
 INITIAL_STATE = {
     "warming_stress": 15.0,
@@ -85,12 +193,19 @@ def clamp(val, lo=0.0, hi=100.0):
     return max(lo, min(hi, val))
 
 
-def compute_survivability(state):
+def compute_survivability(state, params=None):
     """
     Weighted composite survivability index.
 
-    Positive contributors: adaptive_capacity, biosphere_integrity, social_cohesion
-    Negative contributors: warming_stress, resource_pressure, el_nino_stress
+    Positive: adaptive_capacity, biosphere_integrity, social_cohesion
+    Negative: warming_stress, resource_pressure, el_nino_stress
+
+    natural_law_alignment bonus:
+    When a civilization is structurally aligned with Natural Law (AW),
+    biosphere integrity directly reinforces civilization stability — because
+    ecological health IS the foundation of civilization, not a side concern.
+    This bonus is zero for Intelligence (treats nature as external resource)
+    and near-zero for Sapience (still primarily human-centered).
     """
     raw = (
         0.25 * state["adaptive_capacity"]
@@ -100,16 +215,29 @@ def compute_survivability(state):
         - 0.10 * state["resource_pressure"]
         - 0.05 * state["el_nino_stress"]
     )
-    # normalize so initial survivability is ~65-75
-    return clamp(raw / 0.70 * 1.0)
+    base = raw / 0.70
+
+    # Natural law alignment bonus: AW treats biosphere integrity as foundational.
+    # When the biosphere is healthy, AW civilization directly benefits.
+    # When the biosphere degrades, AW civilization has invested in recovery paths.
+    nl_alignment = 0.0
+    if params is not None:
+        nl_alignment = params.get("natural_law_alignment", 0.0)
+    nl_bonus = nl_alignment * (state["biosphere_integrity"] / 100.0) * 18.0
+
+    return clamp(base + nl_bonus)
 
 
 def step(state, params, el_nino_active=False, noise_scale=0.0, rng=None):
     """
     Advance state by one year.
 
-    Equations are transparent and linear-ish; compounding is achieved
-    through state variable interaction rather than exponential terms.
+    Core mechanisms (collapse_hypothesis mode):
+    1. Nonlinear overshoot: capability_amplification * extraction creates super-linear damage
+    2. Ego amplification: slows mitigation, deepens social fragmentation
+    3. Collapse threshold feedback: cascading acceleration when variables cross limits
+    4. AW stabilizing feedback: regeneration, ecological awareness, cooperation create
+       partial stabilization and slow recovery even under stress
     """
     if rng is None:
         rng = random
@@ -118,75 +246,146 @@ def step(state, params, el_nino_active=False, noise_scale=0.0, rng=None):
         return rng.gauss(0, noise_scale) if noise_scale > 0 else 0.0
 
     s = dict(state)
+    ca = params.get("capability_amplification", 1.0)
+    ea = params.get("ego_amplification", 1.0)
 
-    # Base warming trend: rises ~0.25/yr under intelligence, ~0.10 under AW
-    warming_base_rise = 0.30 * params["extraction_bias"] - 0.15 * params["mitigation_speed"]
-    warming_biosphere_feedback = 0.05 * max(0, (100 - s["biosphere_integrity"]) / 100)
+    # --------------------------------------------------------
+    # OVERSHOOT FACTOR
+    # intelligence amplification * extraction * short_termism
+    # = the model's encoding of "capability without wisdom accelerates destruction"
+    # overshoot ≈ 3.25 for Intelligence, ≈ 2.13 for Sapience, ≈ 0.23 for AW
+    # --------------------------------------------------------
+    overshoot = params["extraction_bias"] * ca * (1.0 + params["short_termism"])
+    overshoot_norm = overshoot / 3.5  # normalize to roughly [0,1]
+
+    # --------------------------------------------------------
+    # WARMING STRESS
+    # Ego amplification delays effective mitigation.
+    # AW ecological feedback awareness progressively reduces warming accumulation.
+    # --------------------------------------------------------
+    effective_mitigation = params["mitigation_speed"] / max(0.5, ea)
+    warming_base_rise = 0.42 * overshoot_norm - 0.18 * effective_mitigation
+    warming_biosphere_feedback = 0.08 * max(0, (100 - s["biosphere_integrity"]) / 100)
+    aw_correction = 0.06 * params["ecological_feedback_awareness"]
     s["warming_stress"] = clamp(
-        s["warming_stress"] + warming_base_rise + warming_biosphere_feedback + n()
+        s["warming_stress"] + warming_base_rise + warming_biosphere_feedback
+        - aw_correction + n()
     )
 
-    # El Nino: oscillatory shock applied externally; here we model natural decay
-    el_nino_base = 5.0
+    # --------------------------------------------------------
+    # EL NINO STRESS
+    # resilience_orientation reduces shock; ego amplification worsens governance response.
+    # --------------------------------------------------------
     if el_nino_active:
-        el_nino_pulse = 20.0 * (1.0 - params["resilience_orientation"])
+        shock_sensitivity = (1.0 - params["resilience_orientation"]) * max(0.2, ea)
+        el_nino_pulse = 32.0 * clamp(shock_sensitivity, 0.05, 1.5)
     else:
         el_nino_pulse = 0.0
-    # stress decays toward baseline between events
     s["el_nino_stress"] = clamp(
-        0.85 * s["el_nino_stress"] + el_nino_pulse + el_nino_base * 0.05 + n()
+        0.82 * s["el_nino_stress"] + el_nino_pulse + 5.0 * 0.04 + n()
     )
 
-    # Biosphere integrity: damaged by warming/resource, restored by regeneration
+    # --------------------------------------------------------
+    # BIOSPHERE INTEGRITY
+    # Damaged super-linearly by overshoot.
+    # Recovered by regeneration investment + ecological feedback.
+    # Collapse threshold: below 45, food/resource pressure accelerates and
+    # recovery is suppressed — the "ecological debt cascade" begins.
+    # --------------------------------------------------------
     bio_damage = (
-        0.08 * s["warming_stress"] / 100
-        + 0.05 * s["resource_pressure"] / 100
-        + 0.04 * s["el_nino_stress"] / 100
-    )
-    bio_recovery = 0.06 * params["regeneration_investment"] * (s["biosphere_integrity"] < 85)
-    # ecological awareness accelerates recovery detection
-    recovery_boost = params["ecological_feedback_awareness"] * 0.02
+        0.10 * s["warming_stress"] / 100
+        + 0.06 * s["resource_pressure"] / 100
+        + 0.05 * s["el_nino_stress"] / 100
+    ) * overshoot_norm * 11.0
+
+    bio_recovery = (
+        0.08 * params["regeneration_investment"]
+        + 0.04 * params["ecological_feedback_awareness"]
+    ) * (1.0 if s["biosphere_integrity"] < 90 else 0.2)
+
+    # Collapse threshold: below 45, damage multiplies and recovery is suppressed
+    if s["biosphere_integrity"] < 45:
+        bio_damage *= 1.6
+        bio_recovery *= 0.4
+
     s["biosphere_integrity"] = clamp(
-        s["biosphere_integrity"] - bio_damage * 4.0 + bio_recovery + recovery_boost + n()
+        s["biosphere_integrity"] - bio_damage + bio_recovery + n()
     )
 
-    # Resource pressure: rises with extraction, falls slightly with circular economy
-    rp_rise = 0.12 * params["extraction_bias"] * (1 + s["warming_stress"] / 200)
-    rp_relief = 0.06 * params["regeneration_investment"]
+    # --------------------------------------------------------
+    # RESOURCE PRESSURE
+    # Rises nonlinearly with overshoot; ea amplifies consumption even under scarcity.
+    # Circular regeneration investment provides partial relief.
+    # Collapse threshold: above 80, social cohesion erodes much faster.
+    # --------------------------------------------------------
+    rp_rise = 0.20 * overshoot_norm * (1.0 + ea * 0.3) * (1.0 + s["warming_stress"] / 120)
+    rp_relief = 0.09 * params["regeneration_investment"] * (1.0 + params["cooperation_level"] * 0.3)
     s["resource_pressure"] = clamp(s["resource_pressure"] + rp_rise - rp_relief + n())
 
-    # Social cohesion: eroded by stress, buffered by cooperation
+    # Extra penalty when resource pressure is critical
+    rp_cohesion_penalty = 0.0
+    if s["resource_pressure"] > 80:
+        rp_cohesion_penalty = 0.06 * (s["resource_pressure"] - 80) / 20.0
+
+    # --------------------------------------------------------
+    # SOCIAL COHESION
+    # Ego amplification deepens social fragmentation under stress.
+    # Cooperation level and low short-termism buffer cohesion.
+    # Collapse threshold: below 38, governance degrades, collapse accelerates.
+    # --------------------------------------------------------
     stress_load = (
-        0.03 * s["warming_stress"] / 100
-        + 0.04 * s["resource_pressure"] / 100
-        + 0.05 * s["el_nino_stress"] / 100
-    )
-    cohesion_recovery = 0.04 * params["cooperation_level"]
+        0.05 * s["warming_stress"] / 100
+        + 0.07 * s["resource_pressure"] / 100
+        + 0.08 * s["el_nino_stress"] / 100
+        + rp_cohesion_penalty
+    ) * (1.0 + ea * 0.45)
+
+    cohesion_recovery = 0.05 * params["cooperation_level"] * (1.0 - params["short_termism"] * 0.45)
+
+    # Collapse threshold: below 38, governance feedback loop sets in
+    if s["social_cohesion"] < 38:
+        stress_load *= 1.5
+        cohesion_recovery *= 0.5
+
     s["social_cohesion"] = clamp(
-        s["social_cohesion"] - stress_load * 3.0 + cohesion_recovery + n()
+        s["social_cohesion"] - stress_load * 5.0 + cohesion_recovery + n()
     )
 
-    # Adaptive capacity: built by cooperation and resilience; degraded by social collapse
+    # --------------------------------------------------------
+    # ADAPTIVE CAPACITY
+    # Built by cooperation and resilience; eroded by ego amplification and
+    # social collapse. Governance failure penalty triggers below survivability 30.
+    # --------------------------------------------------------
     ac_build = (
-        0.03 * params["cooperation_level"]
-        + 0.03 * params["resilience_orientation"]
-        - 0.02 * params["short_termism"]
+        0.04 * params["cooperation_level"]
+        + 0.04 * params["resilience_orientation"]
+        - 0.03 * params["short_termism"]
+        - 0.015 * max(0.0, ea - 1.0)
     )
-    ac_drag = 0.02 * max(0, (50 - s["social_cohesion"])) / 100
-    s["adaptive_capacity"] = clamp(s["adaptive_capacity"] + ac_build - ac_drag * 5 + n())
+    ac_drag = 0.04 * max(0.0, 45.0 - s["social_cohesion"]) / 100.0
 
-    s["survivability_index"] = compute_survivability(s)
+    # Compute survivability before ac update, to check governance failure threshold
+    surv_now = compute_survivability(s, params)
+    gov_penalty = 0.0
+    if surv_now < 30:
+        gov_penalty = 0.04 * (30 - surv_now) / 30
+    if surv_now < 15:
+        gov_penalty += 0.06  # collapse lock-in
+
+    s["adaptive_capacity"] = clamp(
+        s["adaptive_capacity"] + ac_build - ac_drag * 5.0 - gov_penalty + n()
+    )
+
+    s["survivability_index"] = compute_survivability(s, params)
     return s
 
 
 def run_scenario(params, el_nino_schedule=None, noise_scale=3.0, n_runs=200, rng_seed=42):
     """
     Run Monte Carlo ensemble for a single framework.
-
-    Returns: list of dicts {year: ..., mean_surv: ..., p10: ..., p90: ...}
+    Returns list of dicts with year, mean/p10/p90 survivability, and state variables.
     """
     years = list(range(YEAR_START, YEAR_END + 1))
-
     if el_nino_schedule is None:
         el_nino_schedule = set()
 
@@ -194,7 +393,7 @@ def run_scenario(params, el_nino_schedule=None, noise_scale=3.0, n_runs=200, rng
     for run_i in range(n_runs):
         rng = random.Random(rng_seed + run_i * 17)
         state = dict(INITIAL_STATE)
-        state["survivability_index"] = compute_survivability(state)
+        state["survivability_index"] = compute_survivability(state, params)
         run_data = []
         for year in years:
             el_nino_active = year in el_nino_schedule
@@ -210,7 +409,6 @@ def run_scenario(params, el_nino_schedule=None, noise_scale=3.0, n_runs=200, rng
         mean_surv = sum(surv_vals) / n
         p10 = surv_vals[int(n * 0.10)]
         p90 = surv_vals[int(n * 0.90)]
-        # also collect mean state variables from last run (representative)
         last_state = all_runs[0][i][2]
         results.append({
             "year": year,
@@ -228,17 +426,13 @@ def run_scenario(params, el_nino_schedule=None, noise_scale=3.0, n_runs=200, rng
 
 
 def make_el_nino_schedule(start=2025, end=2200, base_interval=7, intensification=True):
-    """
-    Generate a set of years in which El Nino events occur.
-    Frequency slowly increases under intensification assumption.
-    """
+    """Generate years in which El Nino events occur; frequency increases slowly."""
     years = set()
     year = start + base_interval
     interval = base_interval
     while year <= end:
         years.add(year)
         if intensification:
-            # interval shrinks slightly over time (from ~7 to ~5 years)
             elapsed_frac = (year - start) / (end - start)
             interval = max(5, base_interval - int(elapsed_frac * 2))
         year += interval
@@ -294,7 +488,7 @@ def run_combined_scenario(n_runs=200, noise_scale=3.0):
 
 
 if __name__ == "__main__":
-    print("Running civilization survival combined scenario...")
+    print(f"Running civilization survival combined scenario [mode: {MODEL_MODE}]...")
     results = run_combined_scenario()
     save_timeseries_csv(
         results,
@@ -308,5 +502,5 @@ if __name__ == "__main__":
     for fw, rows in results.items():
         summary = {r["year"]: r["mean_survivability"]
                    for r in rows if r["year"] in [2050, 2100, 2200]}
-        print(f"  {fw:20s}  2050={summary.get(2050, '?'):5.1f}  "
-              f"2100={summary.get(2100, '?'):5.1f}  2200={summary.get(2200, '?'):5.1f}")
+        print(f"  {fw:20s}  2050={summary.get(2050, 0):5.1f}  "
+              f"2100={summary.get(2100, 0):5.1f}  2200={summary.get(2200, 0):5.1f}")

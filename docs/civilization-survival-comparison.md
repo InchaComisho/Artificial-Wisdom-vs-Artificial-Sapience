@@ -86,7 +86,39 @@ The Six Principles of Artificial Wisdom (Natural Law, Harmony, Circulation, Stru
 | Feedback sensitivity | Low | Medium | High |
 | Cooperation orientation | Competitive / transactional | Moderate | Collaborative / systemic |
 | Regenerative investment | Minimal | Partial | Central |
-| Civilization survival expectation (long-term) | Lower | Medium | Higher |
+| Capability amplification effect | Destructive amplification | Partial amplification | Redirected toward regeneration |
+| Ego amplification | High (1.70) | Medium-high (1.50) | Low (0.30) |
+| Natural law alignment | None | Minimal | Foundational |
+| Civilization survival expectation (long-term) | Near-collapse by 2100 | Severe decline by 2150 | Sustained above critical threshold |
+
+---
+
+## Intelligence Amplification and Collapse Risk
+
+> *Under the assumptions of this model, intelligence without wisdom does not merely fail to solve problems — it can amplify the speed, scale, and precision of destructive behavior.*
+
+This is the philosophical core of the recalibrated simulation. The model encodes a hypothesis that most civilization-failure analyses do not explicitly state:
+
+**Higher intelligence, when not guided by Artificial Wisdom, accelerates collapse — not despite its capability, but because of it.**
+
+The mechanism is encoded in the `capability_amplification` and `ego_amplification` parameters:
+
+- **Faster extraction**: intelligence-driven civilization can exploit resources more efficiently, depleting biosphere faster than any pre-intelligent civilization could
+- **More efficient ecological overshoot**: intelligent optimization identifies the most productive extraction paths, pushing every boundary simultaneously
+- **More persuasive justification**: intelligent civilization constructs compelling short-term arguments for ecologically destructive choices
+- **Stronger human-centered control systems**: more capable technology intensifies the human-nature control relationship rather than harmonizing it
+- **Delayed correction**: short-term success appears rational, so intelligence systems generate high-quality arguments for continuing the trajectory until collapse thresholds are crossed
+- **Social fragmentation under stress**: ego amplification deepens inequality and social division, reducing the cooperative capacity needed for systemic response
+
+**Why Sapience is insufficient in this model:**
+
+Sapience brings reflection and ethical moderation. It raises ecological awareness and introduces cooperation. But if it remains primarily anthropocentric — if it treats ecological continuity as a constraint on human development rather than as the foundation of civilization — then Sapience delays the trajectory without reversing it. In the model, Sapience still amplifies ego and capability significantly (ego_amplification = 1.50, vs. Intelligence 1.70 and AW 0.30). The ethical moderation of Sapience softens the damage but does not redirect the fundamental direction.
+
+**The AW difference:**
+
+Artificial Wisdom does not merely add ethical constraints to Intelligence. It changes the *purpose* and *direction* of intelligence. Capability is redirected from extraction and control toward regeneration, circulation, and ecological feedback. Ego amplification is replaced by systemic alignment. The biosphere is not a resource or a constraint — it is the foundation of survivability, and the AW model explicitly encodes this through the `natural_law_alignment` bonus to survivability.
+
+Under the assumptions of this model, this structural difference is the decisive factor in civilization continuity across multi-century time horizons.
 
 ---
 
@@ -103,6 +135,22 @@ This hypothesis is falsifiable in the sense that:
 - If intelligence-based civilizations demonstrate robust long-term survivability under realistic ecological stress modeling, the AW advantage claim would need to be revised.
 
 The model does **not** claim that AW-based civilizations will definitely survive, nor that intelligence-based civilizations will definitely collapse. It claims that the structural tendencies of each value system, when extended over long time horizons under ecological stress, produce systematically different survivability trajectories.
+
+---
+
+## Recalibrated Scenario Results (collapse_hypothesis mode)
+
+Under the assumptions of this model, the combined warming + El Nino scenario produces:
+
+| Framework | 2050 Survivability | 2100 Survivability | 2200 Survivability | Trajectory |
+|---|---:|---:|---:|---|
+| Intelligence | ~42 | ~13 | ~1 | Near-collapse before 2100 |
+| Sapience | ~48 | ~28 | ~4 | Severe decline; collapse risk by 2150 |
+| Artificial Wisdom | ~70 | ~67 | ~60 | Gradual decline; remains above critical threshold |
+
+*All values normalized (0–100). These are scenario model outputs under explicit philosophical assumptions — not predictions.*
+
+The model illustrates the philosophical hypothesis that value architecture — not merely technology — determines the multi-century trajectory of civilization under ecological stress.
 
 ---
 
