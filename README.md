@@ -502,6 +502,32 @@ https://note.com/inchacomusho/n/n499530f6a055
 
 ## Related Links
 
+### Related Artificial Wisdom Resources
+
+- **Artificial Wisdom Official Definition**  
+  Public definition draft of Artificial Wisdom / AW.  
+  https://github.com/InchaComisho/Artificial-Wisdom-Official-Definition
+
+- **Official Definition article**  
+  Japanese article presenting the official definition text for international reference.  
+  https://note.com/inchacomusho/n/n2d5d79ecda39
+
+- **Artificial Wisdom Definer profile**  
+  International public profile of Master / InchaComisho as definer and systematizer of the Natural-Law-Based Artificial Wisdom Framework.  
+  https://github.com/InchaComisho/Artificial-Wisdom-Definer
+
+- **Definer article**  
+  Japanese public article introducing the definer profile for international readers.  
+  https://note.com/inchacomusho/n/n4cf2be32a211
+
+- **Artificial Wisdom Guardrail Prompt**  
+  Easy copy page and optional prompt/extension tooling.  
+  https://github.com/InchaComisho/Artificial-Wisdom-Guardrail-Prompt
+
+- **Artificial Wisdom Guardrail Protocol**  
+  Core framework, protocol, discussions, and test reports.  
+  https://github.com/InchaComisho/Artificial-Wisdom-Guardrail-Protocol
+
 人工叡智（Artificial Wisdom: AW）とは何か  
 https://note.com/inchacomusho/n/n18c90bd4d328
 
