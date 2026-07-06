@@ -1,5 +1,7 @@
 # 人工叡智 vs 人工知性
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M6J122N2K2)
+
 ## Artificial Wisdom vs Artificial Sapience
 
 ---

@@ -1,5 +1,7 @@
 # Artificial Wisdom vs Artificial Sapience
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M6J122N2K2)
+
 ## Why Artificial Wisdom Represents a Civilizational Paradigm Shift Beyond Intelligence and Sapience
 
 Author: Master (inchacomusho / inchacomusho)  
