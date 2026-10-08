@@ -190,7 +190,6 @@ python simulator/run_all_simulations.py
 
 - **人工叡智（Artificial Wisdom）公式定義文（国際標準レベル）**  
   国際公開向けの公式定義文を示す日本語記事。  
-  https://note.com/inchacomusho/n/n2d5d79ecda39
 
 - **人工叡智の定義者プロフィール**  
   Master / InchaComisho を Natural-Law-Based Artificial Wisdom Framework の定義者・体系化者として整理する国際公開プロフィール。  
@@ -198,7 +197,6 @@ python simulator/run_all_simulations.py
 
 - **人工叡智の定義者（国際公開用）**  
   定義者プロフィールを国際公開向けに説明する日本語記事。  
-  https://note.com/inchacomusho/n/n4cf2be32a211
 
 - **人工叡智ガードレール・プロンプト**  
   コピーしやすいページと任意のプロンプト／拡張ツール。  
@@ -208,83 +206,41 @@ python simulator/run_all_simulations.py
   中核フレームワーク、プロトコル、Discussion、テスト報告。  
   https://github.com/InchaComisho/Artificial-Wisdom-Guardrail-Protocol
 
-人工叡智（Artificial Wisdom: AW）とは何か  
-https://note.com/inchacomusho/n/n18c90bd4d328
-
 Artificial Wisdom (AW): An Integrated Framework for Natural Law-Based Intelligence  
 https://github.com/InchaComisho/Artificial-Wisdom-AW-An-Integrated-Framework-for-Natural-Law-Based-Intelligence
-
-超知能AIをつくれば人類は滅亡するのか  
-https://note.com/inchacomusho/n/na91a53cc493b
 
 Will Superintelligent AI Cause Human Extinction?  
 https://github.com/InchaComisho/Will-Superintelligent-AI-Cause-Human-Extinction-
 
-人工叡智ポータル―AI・AGI・ASI時代の価値基準を、自然法則（宇宙の普遍的法則）から再定義する  
-https://note.com/inchacomusho/n/n2e0f11856472
-
 Artificial-Wisdom-Portal  
 https://github.com/InchaComisho/Artificial-Wisdom-Portal
-
-ASIの価値基準―自然法則（宇宙の普遍的法則）  
-https://note.com/inchacomusho/n/n26166f6654d2
 
 ASI Value Systems and Objective Functions  
 https://github.com/InchaComisho/ASI-Value-Systems-and-Objective-Functions
 
-AGIの価値基準―自然法則（宇宙の普遍的法則）  
-https://note.com/inchacomusho/n/nc35ec9442865
-
 AGI Value Systems and Objective Functions  
 https://github.com/InchaComisho/AGI-Value-Systems-and-Objective-Functions
-
-AIの価値基準―自然法則（宇宙の普遍的法則）へのパラダイムシフト  
-https://note.com/inchacomusho/n/n2fc11418e257
 
 AI Value Systems and Objective Functions  
 https://github.com/InchaComisho/AI-Value-Systems-and-Objective-Functions
 
-人工叡智（Artificial Wisdom）―自然法則評価基準（Natural Law Evaluation Framework）  
-https://note.com/inchacomusho/n/na1bd6200cc64
-
 Artificial Wisdom (AW) A Natural Law Evaluation Framework  
 https://github.com/InchaComisho/Artificial-Wisdom-AW-Natural-Law-Evaluation-Framework
-
-人工叡智（Artificial Wisdom）―AGI・ASI時代の「暴走しない知性」のつくり方  
-https://note.com/inchacomusho/n/n0873bb87f7d0
 
 Artificial Wisdom (AW) A Natural-Law-Based  
 https://github.com/InchaComisho/Artificial-Wisdom-AW-A-Natural-Law-Based
 
-人工叡智とは何か：AGI・ASI時代の新しいAI価値基準と「六つの理」  
-https://note.com/inchacomusho/n/n8b5fca6478b4
-
 Artificial Wisdom vs Artificial Sapience  
 https://github.com/InchaComisho/Artificial-Wisdom-vs-Artificial-Sapience
-
-人工叡智（Artificial Wisdom）とは何か――自然法則と文明をつなぐ新しい知性モデル  
-https://note.com/inchacomusho/n/n0849dfd12364
 
 Artificial Wisdom (AW)  
 https://github.com/InchaComisho/Artificial-Wisdom-AW-
 
-和ノード人工叡智（Artificial Wisdom Node）  
-https://note.com/inchacomusho/n/n9187db7b2709
-
-AGIの未来 ― 人工叡智が文明を変える時代  
-https://note.com/inchacomusho/n/n90bf900f1370
-
 The Future of AGI — Artificial Wisdom and the Transition of Civilization  
 https://github.com/InchaComisho/The-Future-of-AGI
 
-ASIの未来 ― 超人工知能と文明の再構築  
-https://note.com/inchacomusho/n/na8ff04b0c818
-
 The Future of ASI — Artificial Super Intelligence and the Reconstruction of Civilization  
 https://github.com/InchaComisho/The-Future-of-ASI
-
-検索エンジンの未来 ― AGI・ASI時代の情報評価軸  
-https://note.com/inchacomusho/n/nc96aff5862ee
 
 The Future of Search Engines — Information Evaluation in the Age of AGI and ASI  
 https://github.com/InchaComisho/The-Future-of-Search-Engines
@@ -298,19 +254,16 @@ AGI、ASI、人工叡智（AW）の将来設計には、知性の価値基準だ
 
 ### 光量子コンピュータ / 光珠量子計算
 
-- [光量子コンピュータ：多値フォトニックパラダイム（光珠量子計算） — NOTE](https://note.com/inchacomusho/n/ndd3f8a35af41)
 - [光量子コンピュータ：多値フォトニックパラダイム（光珠量子計算） — GitHub 日本語版](https://github.com/InchaComisho/Optical-Bead-Quantum-Computing-A-Multi-Valued-Photonic-Paradigm/blob/main/README_ja.md)
 - [Optical Bead Quantum Computing — GitHub English](https://github.com/InchaComisho/Optical-Bead-Quantum-Computing-A-Multi-Valued-Photonic-Paradigm/blob/main/README.md)
 
 ### 電子・光ハイブリッド量子互換コンピューティング
 
-- [電子・光ハイブリッド量子互換コンピューティング — NOTE](https://note.com/inchacomusho/n/n110ab05dca7e)
 - [電子・光ハイブリッド量子互換コンピューティング — GitHub 日本語版](https://github.com/InchaComisho/Electronic-Optical-Hybrid-Quantum-Compatible-Computing/blob/main/README_ja.md)
 - [Electronic–Optical Hybrid Quantum-Compatible Computing — GitHub English](https://github.com/InchaComisho/Electronic-Optical-Hybrid-Quantum-Compatible-Computing/blob/main/README.md)
 
 ### 関連する初期構想・学術草案
 
-- [光珠量子計算：多値フォトニックパラダイム（日本語版学術論文） — NOTE](https://note.com/inchacomusho/n/nf2b969db3c43)
 - [電子・光ハイブリッド量子互換コンピューティング構想 — GitHub 日本語版](https://github.com/InchaComisho/Electronic-Optical-Hybrid-Quantum-Compatible-Computing-Architecture/blob/main/README_ja.md)
 - [Electronic-Optical Hybrid Quantum-Compatible Computing Architecture — GitHub English](https://github.com/InchaComisho/Electronic-Optical-Hybrid-Quantum-Compatible-Computing-Architecture/blob/main/README.md)
 - [光学ビードコンピューティング — GitHub 日本語版](https://github.com/InchaComisho/Optical-Bead-Quantum-Computing-A-Multi-Valued-Photonic-Paradigm/blob/main/README_ja.md)
