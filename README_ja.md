@@ -164,10 +164,10 @@ Sapience は Intelligence よりも反省的ですが、人間中心主義や二
 
 ### ドキュメントへのリンク
 
-- [文明存続比較（メインドキュメント）](docs/civilization-survival-comparison.md)
-- [温暖化要因シミュレーション](docs/warming-factor-simulation.md)
-- [エルニーニョ要因シミュレーション](docs/el-nino-factor-simulation.md)
-- [複合気候・文明シミュレーション](docs/combined-climate-civilization-simulation.md)
+- [文明存続比較（メインドキュメント）](docs/civilization-survival-comparison_ja.md)
+- [温暖化要因シミュレーション](docs/warming-factor-simulation_ja.md)
+- [エルニーニョ要因シミュレーション](docs/el-nino-factor-simulation_ja.md)
+- [複合気候・文明シミュレーション](docs/combined-climate-civilization-simulation_ja.md)
 
 ### シミュレーションの実行方法
 
