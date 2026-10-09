@@ -1,5 +1,7 @@
 # Civilization Survival Comparison: Intelligence, Sapience, and Artificial Wisdom
 
+[日本語版はこちら / Japanese version](civilization-survival-comparison_ja.md)
+
 ---
 
 ## Abstract

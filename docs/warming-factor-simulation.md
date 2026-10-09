@@ -1,5 +1,7 @@
 # Warming Factor Simulation: Civilization Survival Under Climate Warming Stress
 
+[日本語版はこちら / Japanese version](warming-factor-simulation_ja.md)
+
 ---
 
 ## Purpose

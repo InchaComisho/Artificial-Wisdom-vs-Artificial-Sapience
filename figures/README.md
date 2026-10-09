@@ -1,5 +1,7 @@
 # Figures
 
+[日本語版はこちら / Japanese version](README_ja.md)
+
 This directory contains graphs generated from the civilization survival comparative scenario model.
 
 **These are scenario model visualizations, not empirical data charts or scientific predictions.**

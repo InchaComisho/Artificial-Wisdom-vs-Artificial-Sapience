@@ -1,5 +1,7 @@
 # El Nino Factor Simulation: Civilization Survival Under Oscillation-Driven Stress
 
+[日本語版はこちら / Japanese version](el-nino-factor-simulation_ja.md)
+
 ---
 
 ## Purpose

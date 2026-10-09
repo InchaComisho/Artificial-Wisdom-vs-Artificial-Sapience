@@ -1,5 +1,7 @@
 # Simulation Results
 
+[日本語版はこちら / Japanese version](README_ja.md)
+
 This directory contains CSV outputs from the civilization survival comparative scenario model.
 
 **These are scenario model outputs, not empirical data or scientific predictions.**

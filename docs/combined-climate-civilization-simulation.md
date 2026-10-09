@@ -1,5 +1,7 @@
 # Combined Warming and El Nino Stress: Civilization Continuity Comparison
 
+[日本語版はこちら / Japanese version](combined-climate-civilization-simulation_ja.md)
+
 ---
 
 ## Purpose
